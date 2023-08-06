@@ -1,0 +1,665 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Slava Shop",
+    "dateExported": "2023-06-02T08:56:41.680Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "57cafc4f-14d4-492b-ac93-2dab9820e5e4",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "create-user",
+            "url": "localhost:3000/api/create-user",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-26T21:54:43.320Z",
+            "modified": "2023-06-02T04:34:27.506Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrIjoiU2FteVRyYWluZWUiLCJjb3JyZW9fZWxlY3Ryb25pY28iOiJzYW15VXNlckBnbWFpbC5jb20iLCJyb2wiOiJVU0VSIiwiaWF0IjoxNjg1NjgwNDM2LCJleHAiOjE2ODU2ODQwMzZ9.-jlw47e7azvop1rRjztxVnHuGQkJ-71QurY3zuXD_10"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nick",
+                        "value": "SamyTrainee"
+                    },
+                    {
+                        "name": "correo_electronico",
+                        "value": "samyUser@gmail.com"
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "Samuel Burelos Jeronimo"
+                    },
+                    {
+                        "name": "rol",
+                        "value": "647128f197e84d77a9cd8fa3"
+                    },
+                    {
+                        "name": "fecha_registro",
+                        "value": "2023-11-06T06:00:00.000Z"
+                    },
+                    {
+                        "name": "fecha_nacimiento",
+                        "value": "1988-04-08T06:00:00.000Z"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1415"
+                    },
+                    {
+                        "name": "sexo",
+                        "value": "Hombre"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "/home/spartanluck117/Pictures/Pictures/Familia Burelos/Jeronimo/Samuel/Foto_2021-10-10_130641.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "df4625f3-b0c8-4eb8-bf6f-eeed5852dce1",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "create-rol",
+            "url": "localhost:3000/create-rol",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-26T21:54:43.321Z",
+            "modified": "2023-05-26T21:54:43.321Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"ADMIN\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "65dc27b5-0bb6-4636-804e-fc8e7eb507cd",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-users",
+            "url": "localhost:3000/api/get-users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-26T21:54:43.323Z",
+            "modified": "2023-05-26T21:54:43.323Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4a07e875-4654-4170-a84f-f4d9b13d3aed",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-user",
+            "url": "localhost:3000/api/get-user/643e1eccefb4684493b849d2",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-05-26T21:54:43.324Z",
+            "modified": "2023-05-26T21:54:43.324Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "34666b4c-5c18-433c-8e9d-4cba14f12ed8",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "validate-token",
+            "url": "localhost:3000/api/validate-token",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-06-02T06:09:18.364Z",
+            "modified": "2023-06-02T06:09:41.102Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuaWNrIjoiU2FteURldmVsb3BlciIsImNvcnJlb19lbGVjdHJvbmljbyI6InNhbXlEZXZlbG9wZXJAZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2ODU2ODYwNDUsImV4cCI6MTY4NTY4OTY0NX0.cFysl-ICabIvzj7Ds1lWY0WbaZQY0YumoetvVa8hClo"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ab95e73e-ca93-4feb-8767-cda382e75b79",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:3000/api/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-05-26T21:54:43.325Z",
+            "modified": "2023-05-31T04:07:05.728Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo_electronico\": \"samyDeveloper@gmail.com\",\n  \"password\": \"241096\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2a0430e1-b65e-4d68-a756-936e633184aa",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "Edit-user",
+            "url": "localhost:3000/api/edit-user/64712b08fe3cc78491f1d319",
+            "method": "PUT",
+            "sortNum": 61250,
+            "created": "2023-05-26T21:54:43.326Z",
+            "modified": "2023-05-31T03:58:51.350Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nick",
+                        "value": "SpartanLuck 117",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "correo_electronico",
+                        "value": "samuel241096@gmail.com",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "Samuel Burelos Jeronimo",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "rol",
+                        "value": "647128f197e84d77a9cd8fa0"
+                    },
+                    {
+                        "name": "fecha_registro",
+                        "value": "2023-11-06T06:00:00.000Z",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "fecha_nacimiento",
+                        "value": "1988-04-08T06:00:00.000Z",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "241096",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "sexo",
+                        "value": "Masculino",
+                        "isDisabled": true
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "/home/spartanluck_117/Downloads/Lenovo.jpg",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b37015e6-de21-45a7-8bb8-ead2b7b517a7",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "delete-user",
+            "url": "localhost:3000/api/delete-user/646d8d95fd38cee00a540495",
+            "method": "DELETE",
+            "sortNum": 62500,
+            "created": "2023-05-26T21:54:43.327Z",
+            "modified": "2023-05-26T21:54:43.327Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1313a64e-8d31-4454-9106-7ecff3aaadbf",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "create-brand",
+            "url": "localhost:3000/api/create-brand",
+            "method": "POST",
+            "sortNum": 65000,
+            "created": "2023-05-26T21:54:43.328Z",
+            "modified": "2023-05-26T21:57:27.584Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "SpartanBurn Industries"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "/home/spartanluck117/Pictures/Pictures/Team SpartanCode/IMG_20230429_214734.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "505508b3-eee7-48aa-8273-de357a05b0c3",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-brands",
+            "url": "localhost:3000/api/get-brands",
+            "method": "GET",
+            "sortNum": 67500,
+            "created": "2023-05-26T21:54:43.329Z",
+            "modified": "2023-05-26T21:54:43.329Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "18545693-040a-4e79-a268-e21f7e70b55f",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-brand",
+            "url": "localhost:3000/api/get-brand/646e35938428c757cb2051fc",
+            "method": "GET",
+            "sortNum": 68750,
+            "created": "2023-05-26T21:54:43.330Z",
+            "modified": "2023-05-26T21:54:43.330Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9fc5fd4a-3484-4a89-88ca-eac497bbf01a",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "update-brand",
+            "url": "localhost:3000/api/update-brand/646e35938428c757cb2051fc",
+            "method": "PUT",
+            "sortNum": 69375,
+            "created": "2023-05-26T21:54:43.331Z",
+            "modified": "2023-05-26T21:54:43.331Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "SpartanCode Industries"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "/home/spartanluck_117/Downloads/Lenovo.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "68f3b767-af03-4c8f-9dbf-105addce6e49",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "delete-brand",
+            "url": "localhost:3000/api/delete-brand/646e3d85e2a53e7db085658b",
+            "method": "DELETE",
+            "sortNum": 69687.5,
+            "created": "2023-05-26T21:54:43.332Z",
+            "modified": "2023-05-26T21:54:43.332Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d71599f0-430c-4da8-a424-076f6f0ccd80",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "create-category",
+            "url": "localhost:3000/api/create-category",
+            "method": "POST",
+            "sortNum": 69843.8,
+            "created": "2023-05-26T21:54:43.333Z",
+            "modified": "2023-05-26T21:54:43.333Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Electronicos\",\n  \"descripcion\": \"Productos electricos y electronicos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1244f217-1e55-42d0-bbc8-398e9cb76821",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-categories",
+            "url": "localhost:3000/api/get-categories",
+            "method": "GET",
+            "sortNum": 69921.9,
+            "created": "2023-05-26T21:54:43.334Z",
+            "modified": "2023-05-26T21:54:43.334Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Electronicos\",\n  \"descripcion\": \"Productos electricos y electronicos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "84d197b1-2e98-428c-8ae9-ca9899be5530",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-category",
+            "url": "localhost:3000/api/get-category/644206703e42707387d10bbd",
+            "method": "GET",
+            "sortNum": 69960.9,
+            "created": "2023-05-26T21:54:43.335Z",
+            "modified": "2023-05-26T21:54:43.335Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2eb54387-52ca-4f17-9fc0-044ee80e1ec7",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "update-category",
+            "url": "localhost:3000/api/update-category/644206703e42707387d10bbd",
+            "method": "PUT",
+            "sortNum": 69980.4,
+            "created": "2023-05-26T21:54:43.336Z",
+            "modified": "2023-05-26T21:54:43.336Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Electronicos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3188c790-79a4-4028-9d5d-64f15272e4d2",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "delete-category",
+            "url": "localhost:3000/api/delete-category/6468e1515ebe004604daf35d",
+            "method": "DELETE",
+            "sortNum": 69990.2,
+            "created": "2023-05-26T21:54:43.337Z",
+            "modified": "2023-05-26T21:54:43.337Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Electronicos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "26954774-3903-4f07-b520-a208206de680",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "create-product",
+            "url": "localhost:3000/api/create-product",
+            "method": "POST",
+            "sortNum": 69995.1,
+            "created": "2023-05-26T21:54:43.338Z",
+            "modified": "2023-05-27T19:56:28.388Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Gabinete Pc Media Torre Atx Eatx Rog Strix Helios Gx601 Asus"
+                    },
+                    {
+                        "name": "precio",
+                        "value": "7257"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "Gabinete gamer"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "6468e1515ebe004604daf35d"
+                    },
+                    {
+                        "name": "marca",
+                        "value": "6468e1805ebe004604daf363"
+                    },
+                    {
+                        "name": "cantidad",
+                        "value": "28"
+                    },
+                    {
+                        "name": "modelo",
+                        "value": "GX601 "
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "/home/spartanluck117/Downloads/D_NQ_NP_608857-MLU69143150307_042023-O.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "82980645-6918-439f-937f-8a793fa4fd51",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-products",
+            "url": "localhost:3000/api/get-products",
+            "method": "GET",
+            "sortNum": 69997.6,
+            "created": "2023-05-26T21:54:43.339Z",
+            "modified": "2023-05-26T21:54:43.339Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "130bae9b-3ff3-48f6-8973-7513f6d7aa0f",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-product",
+            "url": "localhost:3000/api/get-product/646d59661da47a2b744a725f",
+            "method": "GET",
+            "sortNum": 69998.8,
+            "created": "2023-05-26T21:54:43.340Z",
+            "modified": "2023-05-26T21:54:43.340Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a8e98f31-4094-481f-9b5c-f82921ed593d",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "update-product",
+            "url": "localhost:3000/api/update-product/646d801f59988c69a5c3e464",
+            "method": "PUT",
+            "sortNum": 69999.4,
+            "created": "2023-05-26T21:54:43.341Z",
+            "modified": "2023-05-26T21:54:43.341Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Aorus"
+                    },
+                    {
+                        "name": "precio",
+                        "value": "28000"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "Aorus intel core i9 13th gen"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "644f766ccd86054e4bd50d22"
+                    },
+                    {
+                        "name": "marca",
+                        "value": "644f6b8c24bc6100c61a3d8b"
+                    },
+                    {
+                        "name": "cantidad",
+                        "value": "12"
+                    },
+                    {
+                        "name": "modelo",
+                        "value": "Z-LGA 1900"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "/home/spartanluck_117/Downloads/WhatsApp Image 2023-05-13 at 20.51.58.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "851a3a95-7627-405d-b2c5-1f6273bf582e",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "delete-product",
+            "url": "localhost:3000/api/delete-product/646d59661da47a2b744a725f",
+            "method": "DELETE",
+            "sortNum": 69999.7,
+            "created": "2023-05-26T21:54:43.342Z",
+            "modified": "2023-05-26T21:54:43.342Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Laptop\",\n  \"precio\": 5600,\n  \"descripcion\": \"PC portatil, de gama media con procesador core i5\",\n  \"categoria\": \"64420a0f31053688c8a7fab9\",\n  \"marca\": \"644205893e42707387d10bb7\",\n  \"cantidad\": 30,\n  \"imagen\": \"imagen.png\",\n  \"modelo\": \"Y70015isk\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e136fec2-76fe-4ccc-a26a-2ff1b161ee01",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "initialize",
+            "url": "localhost:3000/api/initialize",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-05-26T21:54:43.343Z",
+            "modified": "2023-05-26T21:54:43.343Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9295b49f-3af6-4f92-a9c7-6f3908e782ae",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-sales",
+            "url": "localhost:3000/api/get-sales",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-05-26T21:54:43.344Z",
+            "modified": "2023-05-26T21:54:43.344Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "32df121f-0e10-47ae-b5ab-18ed7153e1be",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "get-sale",
+            "url": "localhost:3000/api/get-sale/64475510cc273dfb208c1f0",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-05-26T21:54:43.345Z",
+            "modified": "2023-05-26T21:54:43.345Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bde1be30-d025-4091-ae5f-366a95858a1d",
+            "colId": "5536362a-4e49-491e-b65b-c9b2bccc725c",
+            "containerId": "",
+            "name": "create-sale",
+            "url": "localhost:3000/api/create-sale",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-05-26T21:54:43.346Z",
+            "modified": "2023-05-26T21:54:43.346Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"articulo\": \"64475373cc273dfb2e08c1e5\",\n    \"cantidad\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

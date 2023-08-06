@@ -1,0 +1,10 @@
+# BRANDS
+
+### Create Brand
+POST http://localhost:3000/api/create-brand
+Content-Type: application/x-www-form-urlencoded
+
+
+
+### Get Brands
+GET http://localhost:3000/api/get-brands

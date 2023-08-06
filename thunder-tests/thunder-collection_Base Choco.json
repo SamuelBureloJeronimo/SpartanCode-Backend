@@ -1,0 +1,42 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Base Choco",
+    "dateExported": "2023-04-24T02:22:23.662Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9e4d35f7-49ef-49ef-9f1d-b53e51d1d936",
+            "colId": "8da3a502-6d9e-4b44-8fd7-c1c341734048",
+            "containerId": "",
+            "name": "create-affiliate",
+            "url": "localhost:3000/api/create-affiliate",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-24T01:32:13.277Z",
+            "modified": "2023-04-24T02:15:23.495Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Juan\",\n  \"lastName\": \"Perez Hernandez\",\n  \"affiliationDate\": \"2023-04-23\",\n  \"section\": \"643609384ffe088c005f9e0a\",\n  \"community\": \"643769b729c1b1ea50b92bb5\",\n  \"electorKey\": \"JDIF45368654\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0de6a035-a552-444e-9680-b8b68e6b71f6",
+            "colId": "8da3a502-6d9e-4b44-8fd7-c1c341734048",
+            "containerId": "",
+            "name": "get-affiliates",
+            "url": "localhost:3000/api/get-affiliates",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-24T02:14:52.892Z",
+            "modified": "2023-04-24T02:14:52.892Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

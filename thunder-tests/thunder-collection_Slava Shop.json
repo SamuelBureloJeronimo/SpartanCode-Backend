@@ -1,0 +1,626 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Slava Shop",
+    "dateExported": "2023-05-05T05:18:12.206Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2e100792-dc0a-4b09-91b9-23c7b07d15d5",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "create-user",
+            "url": "localhost:3000/api/create-user",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-25T00:53:46.319Z",
+            "modified": "2023-05-01T09:18:45.482Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nick",
+                        "value": "SSamuel"
+                    },
+                    {
+                        "name": "correo_electronico",
+                        "value": "samuelS@gmail.com"
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "Freddy Ruben"
+                    },
+                    {
+                        "name": "rol",
+                        "value": "6436280691cfa932a7960a44"
+                    },
+                    {
+                        "name": "fecha_registro",
+                        "value": "2023-11-06T06:00:00.000Z"
+                    },
+                    {
+                        "name": "fecha_nacimiento",
+                        "value": "1988-04-08T06:00:00.000Z"
+                    },
+                    {
+                        "name": "password",
+                        "value": "141592"
+                    },
+                    {
+                        "name": "sexo",
+                        "value": "Hombre"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "d:\\Pictures\\Respaldo.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "be47f819-c474-40f1-9e14-b5b89f04b39c",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "create-rol",
+            "url": "localhost:3000/create-rol",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-25T00:53:46.320Z",
+            "modified": "2023-04-25T00:53:46.320Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"ADMIN\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bcb6818d-629f-4ba8-80ab-bb10297d9861",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-users",
+            "url": "localhost:3000/api/get-users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-25T00:53:46.321Z",
+            "modified": "2023-04-25T00:53:46.321Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "44f13b16-edeb-4071-9fc3-993d3f7aeadb",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-user",
+            "url": "localhost:3000/api/get-user/643e1eccefb4684493b849d2",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-04-25T00:53:46.323Z",
+            "modified": "2023-04-25T00:53:46.323Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e365f4a3-6ca9-46fa-a792-4f174b5469fa",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "edit-user",
+            "url": "localhost:3000/api/edit-user/643e1eccefb4684493b849d2",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-04-25T00:53:46.324Z",
+            "modified": "2023-04-25T00:53:46.324Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nick\": \"Shmeker\",\n  \"correo_electronico\": \"freddyruben@outlook.com\",\n  \"nombre\": \"Freddy Ruben\",\n  \"rol\": \"6436280691cfa932a7960a44\",\n  \"imagen\": \"image.png\",\n  \"fecha_registro\": \"11-06-2023\",\n  \"fecha_nacimiento\": \"04-08-1988\",\n  \"sexo\": \"Hombre\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4eace254-7ce8-4216-b0c3-3f7e800c6884",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:3000/api/login",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-04-25T00:53:46.325Z",
+            "modified": "2023-04-25T00:53:46.325Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo_electronico\": \"freddyruben@outlook.com\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5562a86c-d103-4ab8-a569-b88b32e8bb20",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "create-brand",
+            "url": "localhost:3000/api/create-brand",
+            "method": "POST",
+            "sortNum": 65000,
+            "created": "2023-04-25T00:53:46.326Z",
+            "modified": "2023-05-01T07:34:36.344Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "SpartanCode"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "logo",
+                        "value": "d:\\Pictures\\One Piece Wallpapers\\luffy-one-piece-b23144.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "163bcb0d-f2cf-404d-a51a-adf5080b4466",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-brands",
+            "url": "localhost:3000/api/get-brands",
+            "method": "GET",
+            "sortNum": 67500,
+            "created": "2023-04-25T00:53:46.327Z",
+            "modified": "2023-04-25T00:53:46.327Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ab9d5170-616f-437f-aa01-1f18e4f88844",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-brand",
+            "url": "localhost:3000/api/get-brand/644f555d27e01391e98ff9dr",
+            "method": "GET",
+            "sortNum": 68750,
+            "created": "2023-04-25T00:53:46.328Z",
+            "modified": "2023-05-01T07:45:04.664Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4dd5563b-99ce-4f22-ad4d-ef8b1e9a3c37",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "update-brand",
+            "url": "localhost:3000/api/update-brand/644f6b8c24bc6100c61a3d8b",
+            "method": "PUT",
+            "sortNum": 69375,
+            "created": "2023-04-25T00:53:46.329Z",
+            "modified": "2023-05-01T08:09:09.381Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "SpartanosUnidos"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "logo",
+                        "value": "d:\\Pictures\\106395739_2666326346959255_104759876962463119_n.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "61bf7899-1a1a-45af-9254-f5a2eb3038b3",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "delete-brand",
+            "url": "localhost:3000/api/delete-brand/644f555d27e01391e98ff9da",
+            "method": "DELETE",
+            "sortNum": 69687.5,
+            "created": "2023-04-25T00:53:46.330Z",
+            "modified": "2023-05-01T08:07:25.293Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4312a9ac-e114-42dc-93c6-d989952c8fd8",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "create-category",
+            "url": "localhost:3000/api/create-category",
+            "method": "POST",
+            "sortNum": 69843.8,
+            "created": "2023-04-25T00:53:46.331Z",
+            "modified": "2023-04-25T00:53:46.331Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Electronicos\",\n  \"descripcion\": \"Productos electricos y electronicos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "55540160-f3be-45af-9446-79d538afa37c",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-categories",
+            "url": "localhost:3000/api/get-categories",
+            "method": "GET",
+            "sortNum": 69921.9,
+            "created": "2023-04-25T00:53:46.332Z",
+            "modified": "2023-04-25T00:53:46.332Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Electronicos\",\n  \"descripcion\": \"Productos electricos y electronicos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fe768164-459f-4149-9f62-4a80d58cd4e3",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-category",
+            "url": "localhost:3000/api/get-category/644206703e42707387d10bbd",
+            "method": "GET",
+            "sortNum": 69960.9,
+            "created": "2023-04-25T00:53:46.333Z",
+            "modified": "2023-04-25T00:53:46.333Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "bc0ae45c-33d4-48fd-bd62-cc23e2336299",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "update-category",
+            "url": "localhost:3000/api/update-category/644206703e42707387d10bbd",
+            "method": "PUT",
+            "sortNum": 69980.4,
+            "created": "2023-04-25T00:53:46.334Z",
+            "modified": "2023-04-25T00:53:46.334Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Electronicos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b4ed680b-f54f-455b-9471-5076bd7f4c83",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "delete-category",
+            "url": "localhost:3000/api/delete-category/644206703e42707387d10bbd",
+            "method": "DELETE",
+            "sortNum": 69990.2,
+            "created": "2023-04-25T00:53:46.335Z",
+            "modified": "2023-04-25T00:53:46.335Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Electronicos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fa3aacde-c2a4-432c-a059-211da8b20c75",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "create-product",
+            "url": "localhost:3000/api/create-product",
+            "method": "POST",
+            "sortNum": 69995.1,
+            "created": "2023-04-25T00:53:46.336Z",
+            "modified": "2023-05-01T08:33:58.262Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Laptop Gamer 3000"
+                    },
+                    {
+                        "name": "precio",
+                        "value": "19600"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "PC portatil, de gama media con procesador core i59"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "644f766ccd86054e4bd50d22"
+                    },
+                    {
+                        "name": "marca",
+                        "value": "644f6b8c24bc6100c61a3d8b"
+                    },
+                    {
+                        "name": "cantidad",
+                        "value": "30"
+                    },
+                    {
+                        "name": "modelo",
+                        "value": "Y720"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "d:\\Pictures\\me.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9d55385e-0075-4af6-83fc-4b4d61db8951",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-products",
+            "url": "localhost:3000/api/get-products",
+            "method": "GET",
+            "sortNum": 69997.6,
+            "created": "2023-04-25T00:53:46.337Z",
+            "modified": "2023-04-25T00:53:46.337Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2e6dfe3b-818a-4a02-9e80-3312ec400d83",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-product",
+            "url": "localhost:3000/api/get-product/6441c21ae473528d3a8eb334",
+            "method": "GET",
+            "sortNum": 69998.8,
+            "created": "2023-04-25T00:53:46.338Z",
+            "modified": "2023-04-25T00:53:46.338Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2ec9c903-a82d-4d27-8e04-cdd26bff69c4",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "update-product",
+            "url": "localhost:3000/api/update-product/644f7976820f4e965ad9e0d7",
+            "method": "PUT",
+            "sortNum": 69999.4,
+            "created": "2023-04-25T00:53:46.339Z",
+            "modified": "2023-05-01T08:54:58.501Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Aorus"
+                    },
+                    {
+                        "name": "precio",
+                        "value": "28000"
+                    },
+                    {
+                        "name": "descripcion",
+                        "value": "Aorus intel core i9 13th gen"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "644f766ccd86054e4bd50d22"
+                    },
+                    {
+                        "name": "marca",
+                        "value": "644f6b8c24bc6100c61a3d8b"
+                    },
+                    {
+                        "name": "cantidad",
+                        "value": "12"
+                    },
+                    {
+                        "name": "modelo",
+                        "value": "Y720"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "d:\\Pictures\\One Piece Wallpapers\\606665.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "139a9779-972d-4d8c-992a-657da7f28a24",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "delete-product",
+            "url": "localhost:3000/api/delete-product/644f7939820f4e965ad9e0d2",
+            "method": "DELETE",
+            "sortNum": 69999.7,
+            "created": "2023-04-25T00:53:46.340Z",
+            "modified": "2023-05-01T08:57:38.494Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Laptop\",\n  \"precio\": 5600,\n  \"descripcion\": \"PC portatil, de gama media con procesador core i5\",\n  \"categoria\": \"64420a0f31053688c8a7fab9\",\n  \"marca\": \"644205893e42707387d10bb7\",\n  \"cantidad\": 30,\n  \"imagen\": \"imagen.png\",\n  \"modelo\": \"Y70015isk\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bdfdd4eb-484c-47b8-a44d-1606f8b9cd98",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "initialize",
+            "url": "localhost:3000/api/initialize",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-04-25T00:53:46.341Z",
+            "modified": "2023-04-25T00:53:46.341Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "07813bf7-0822-4e1e-a4fe-1e5c7ed51182",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-sales",
+            "url": "localhost:3000/api/get-sales",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-04-25T04:02:18.003Z",
+            "modified": "2023-04-25T04:21:52.559Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a23a2c76-fc3e-493f-a701-a7c25bf4517f",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "get-sale",
+            "url": "localhost:3000/api/get-sale/64475510cc273dfb208c1f0",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-04-25T04:22:48.829Z",
+            "modified": "2023-05-01T07:37:41.040Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "17a52231-0215-4a34-9a92-cb89652bdd23",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "create-sale",
+            "url": "localhost:3000/api/create-sale",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-04-25T04:24:24.281Z",
+            "modified": "2023-04-25T04:24:24.281Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"articulo\": \"64475373cc273dfb2e08c1e5\",\n    \"cantidad\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc5660c7-792f-4d83-a81a-b846d8572163",
+            "colId": "68e4a509-09b8-4612-a6c0-c001e7ad1eff",
+            "containerId": "",
+            "name": "Edit-user",
+            "url": "localhost:3000/api/edit-user/64547a2d64fac01002ba21c1",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2023-05-05T03:41:17.190Z",
+            "modified": "2023-05-05T05:17:41.291Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nick",
+                        "value": "SpartanLuck 117",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "correo_electronico",
+                        "value": "samuel241096@gmail.com"
+                    },
+                    {
+                        "name": "nombre",
+                        "value": "Samuel Burelos Jeronimo",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "rol",
+                        "value": "6436280691cfa932a7960a44",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "fecha_registro",
+                        "value": "2023-11-06T06:00:00.000Z",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "fecha_nacimiento",
+                        "value": "1988-04-08T06:00:00.000Z",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "password",
+                        "value": "numeroPI141592",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "sexo",
+                        "value": "Masculino",
+                        "isDisabled": true
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "imagen",
+                        "value": "d:\\Pictures\\200850.jpg",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "marca" : {
+        "_id": "ObjectId",
+        "nombre": "String",
+        "logo": "String"
+    },
+
+    "categoria" : {
+        "_id": "ObjectId",
+        "nombre": "String",
+        "descripcion": "String"
+    },
+
+    "articulo" : {
+        "_id": "ObjectId",
+        "nombre": "String",
+        "precio": "Number",
+        "description": "String",
+        "modelo": "String",
+        "categoria": {
+            "_id": {"type": "ObjectId", "ref": "categoria"},
+            "nombre": "String"
+        },
+        "marca":{
+            "_id": {"type": "ObjectId", "ref": "marca"},
+            "nombre": "String"
+        },
+        "cantidad": "Number",
+        "imagen": "String"
+    },
+
+    "rol" : {
+        "_id": "ObjectId",
+        "nombre": "String"
+    } ,
+
+    "usuario" : {
+        "_id": "ObjectId",
+        "nick": "String",
+        "correo_electronico": "String",
+        "nombre": "String",
+        "carrito": [{
+            "_id": {"type": "ObjectId", "ref": "articulo"}
+        }],
+        "rol": {
+            "_id": {"type": "ObjectId", "ref": "rol"},
+            "nombre": "String"
+        },
+        "imagen": "String",
+        "fecha_registro": "Date",
+        "fecha_nacimiento": "Date",
+        "password": "String",
+        "sexo": "String",
+        "direcciones": [{
+            "_id": {"type": "ObjectId", "ref": "direcciones"},
+            "nombreRef": "String",
+            "cp": "Number",
+            "estado": "String",
+            "municipio": "String",
+            "colonia": "String",
+            "calle": "String",
+            "nExterior": "String",
+            "calleRef1": "String",
+            "calleRef2": "String",
+            "Tel": "String",
+            "descripcionDomicilio": "String"
+        }]
+    },
+
+    "direcciones": {
+        "_id": "ObjectId",
+        "nombreRef": "String",
+        "cp": "Number",
+        "estado": "String",
+        "municipio": "String",
+        "colonia": "String",
+        "calle": "String",
+        "nExterior": "Number",
+        "calleRef1": "String",
+        "calleRef2": "String",
+        "Tel": "String",
+        "descripcionDomicilio": "String"
+    },
+
+    "venta" : {
+        "_id": "ObjectId",
+        "articulo": {
+            "_id": {"type": "ObjectId", "ref": "articulo"},
+            "nombre": "String",
+            "precio": "Number",
+            "marca": {
+                "_id": {"type": "ObjectId", "ref": "marca"},
+                "nombre": "String"
+            }
+        },
+        "fecha": "Date",
+        "total": "Number"
+    }
+}

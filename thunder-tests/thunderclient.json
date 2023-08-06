@@ -1,0 +1,290 @@
+[
+  {
+    "_id": "ee5ea39e-ee4b-466a-8002-26299b89a13f",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "create-user",
+    "url": "localhost:3000/api/create-user",
+    "method": "POST",
+    "sortNum": 10000,
+    "created": "2023-04-21T04:29:52.492Z",
+    "modified": "2023-04-21T04:29:52.492Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nick\": \"Shmeker\",\n  \"correo_electronico\": \"freddyruben@outlook.com\",\n  \"nombre\": \"Freddy Ruben\",\n  \"rol\": \"6436280691cfa932a7960a44\",\n  \"imagen\": \"image.png\",\n  \"fecha_registro\": \"11-06-2023\",\n  \"fecha_nacimiento\": \"04-08-1988\",\n  \"sexo\": \"Hombre\",\n  \"password\": \"123456\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "921d222a-62dc-4b31-97a2-157261648de2",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "create-rol",
+    "url": "localhost:3000/create-rol",
+    "method": "POST",
+    "sortNum": 20000,
+    "created": "2023-04-21T04:29:52.493Z",
+    "modified": "2023-04-21T04:29:52.493Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nombre\": \"ADMIN\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "dc2470c0-d1b4-4045-aff4-8b8c1053014f",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "get-users",
+    "url": "localhost:3000/api/get-users",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2023-04-21T04:29:52.494Z",
+    "modified": "2023-04-21T04:29:52.494Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "599086f4-eab7-480e-872e-c59e942c2e97",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "get-user",
+    "url": "localhost:3000/api/get-user/643e1eccefb4684493b849d2",
+    "method": "GET",
+    "sortNum": 40000,
+    "created": "2023-04-21T04:29:52.495Z",
+    "modified": "2023-04-21T04:29:52.495Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "98a33713-69f8-4a8e-9d3e-9e7de3cdb260",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "edit-user",
+    "url": "localhost:3000/api/edit-user/643e1eccefb4684493b849d2",
+    "method": "PUT",
+    "sortNum": 50000,
+    "created": "2023-04-21T04:29:52.496Z",
+    "modified": "2023-04-21T04:29:52.496Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nick\": \"Shmeker\",\n  \"correo_electronico\": \"freddyruben@outlook.com\",\n  \"nombre\": \"Freddy Ruben\",\n  \"rol\": \"6436280691cfa932a7960a44\",\n  \"imagen\": \"image.png\",\n  \"fecha_registro\": \"11-06-2023\",\n  \"fecha_nacimiento\": \"04-08-1988\",\n  \"sexo\": \"Hombre\",\n  \"password\": \"123456\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "04606c8b-0bd9-41a1-b3b5-78ee2c31cc2f",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "login",
+    "url": "localhost:3000/api/login",
+    "method": "POST",
+    "sortNum": 60000,
+    "created": "2023-04-21T04:29:52.497Z",
+    "modified": "2023-04-21T04:29:52.497Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"correo_electronico\": \"freddyruben@outlook.com\",\n  \"password\": \"123456\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "a28690a3-945a-40ac-9aff-0123f4666bb9",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "create-brand",
+    "url": "localhost:3000/api/create-brand",
+    "method": "POST",
+    "sortNum": 65000,
+    "created": "2023-04-21T04:29:52.498Z",
+    "modified": "2023-04-21T04:29:52.498Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nombre\": \"Lenovo\",\n  \"logo\": \"image.png\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ff664599-46b2-4e58-8596-858a06fbf7d0",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "get-brands",
+    "url": "localhost:3000/api/get-brands",
+    "method": "GET",
+    "sortNum": 67500,
+    "created": "2023-04-21T04:29:52.499Z",
+    "modified": "2023-04-21T04:29:52.499Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "e274fe1d-b98b-4823-8d0c-332371416291",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "get-brand",
+    "url": "localhost:3000/api/get-brand/644201963e42707387d10ba8",
+    "method": "GET",
+    "sortNum": 68750,
+    "created": "2023-04-21T04:29:52.500Z",
+    "modified": "2023-04-21T04:29:52.500Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "830422b0-f39a-48c9-b15e-cd51771b429a",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "update-brand",
+    "url": "localhost:3000/api/update-brand/644201963e42707387d10ba8",
+    "method": "PUT",
+    "sortNum": 69375,
+    "created": "2023-04-21T04:29:52.501Z",
+    "modified": "2023-04-21T04:29:52.501Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nombre\": \"lenovo\",\n  \"logo\": \"logo.png\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "ca2579c7-fa53-4fee-aa50-6fef12b3209f",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "delete-brand",
+    "url": "localhost:3000/api/delete-brand/644201963e42707387d10ba8",
+    "method": "DELETE",
+    "sortNum": 69687.5,
+    "created": "2023-04-21T04:29:52.502Z",
+    "modified": "2023-04-21T04:29:52.502Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "69a3d57a-67b2-4f12-8ada-7d18b0fe3e84",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "create-category",
+    "url": "localhost:3000/api/create-category",
+    "method": "POST",
+    "sortNum": 69843.8,
+    "created": "2023-04-21T04:29:52.503Z",
+    "modified": "2023-04-21T04:29:52.503Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nombre\": \"Electronicos\",\n  \"descripcion\": \"Productos electricos y electronicos\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "6937e748-4031-433c-8881-2df9943046e2",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "get-categories",
+    "url": "localhost:3000/api/get-categories",
+    "method": "GET",
+    "sortNum": 69921.9,
+    "created": "2023-04-21T04:29:52.504Z",
+    "modified": "2023-04-21T04:29:52.504Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nombre\": \"Electronicos\",\n  \"descripcion\": \"Productos electricos y electronicos\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "703b38e6-25fa-4aa4-9d6e-d2c18ef17e23",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "get-category",
+    "url": "localhost:3000/api/get-category/644206703e42707387d10bbd",
+    "method": "GET",
+    "sortNum": 69960.9,
+    "created": "2023-04-21T04:29:52.505Z",
+    "modified": "2023-04-21T04:29:52.505Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "1cb20567-7ac2-4cf3-b438-6399aeab91d0",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "update-category",
+    "url": "localhost:3000/api/update-category/644206703e42707387d10bbd",
+    "method": "PUT",
+    "sortNum": 69980.4,
+    "created": "2023-04-21T04:29:52.506Z",
+    "modified": "2023-04-21T04:29:52.506Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nombre\": \"Electronicos\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "fc40556c-6160-466f-b9e7-5ed794c19ca7",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "delete-category",
+    "url": "localhost:3000/api/delete-category/644206703e42707387d10bbd",
+    "method": "DELETE",
+    "sortNum": 69990.2,
+    "created": "2023-04-21T04:29:52.507Z",
+    "modified": "2023-04-21T04:29:52.507Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"nombre\": \"Electronicos\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "901f30cf-4427-4fd6-9e7b-937eebb19a8a",
+    "colId": "5091c1f9-7329-45f5-8a70-cf45bfebb85e",
+    "containerId": "",
+    "name": "initialize",
+    "url": "localhost:3000/api/initialize",
+    "method": "POST",
+    "sortNum": 70000,
+    "created": "2023-04-21T04:29:52.508Z",
+    "modified": "2023-04-21T04:29:52.508Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
