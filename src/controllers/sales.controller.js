@@ -15,7 +15,7 @@ let createSale = async (req, res) => {
             if (product.cantidad > 0 && product.cantidad >= sale.cantidad) {
                 sale.total = sale.cantidad * product.precio;
                 product.cantidad -= sale.cantidad;
-                sale.status = true;
+                sale.status = false;
 
                 await product.save();
                 await sale.save();
@@ -31,22 +31,21 @@ let createSale = async (req, res) => {
     }
 }
 
-let cancelSale = async (req, res) => {
+let updateSale = async (req, res) => {
     try {
         let sale = await Sales.findById(req.params.id);
-        let articulo = await Product.findById(sale.articulo);
 
         if (sale) {
-            if (sale.status != false) {
-                articulo.cantidad += sale.cantidad;
+            if (sale.status == false) {
+                deleted_sale = await Sales.findByIdAndUpdate(sale, req.body);
+                sale.status = true;
+                await sale.save();
+                res.status(200).json({ mesage: 'Venta actualizada con éxito'});
+            } else{
                 deleted_sale = await Sales.findByIdAndUpdate(sale, req.body);
                 sale.status = false;
-
                 await sale.save();
-                await articulo.save();
-                res.status(200).json({ mesage: 'Venta cancelada con éxito', nombre: deleted_sale });
-            } else{
-                res.json({ message: 'La compra ya ha sido cancelada' });
+                res.status(200).json({ mesage: 'Venta actualizada con éxito'});
             }
         } else {
             res.json({ message: 'La compra no se encuentra' });
@@ -74,9 +73,23 @@ let getSale = async (req, res) => {
     }
 }
 
+let getSaleByIdUser = async (req, res) => {
+    try {
+        let { idUser } = req.params;
+        let sale = await Sales.find({user: idUser}).populate('articulo status');
+        if (sale)
+            res.status(200).json(sale);
+        else
+            res.json({ msg: "No se encontro esta compra" });
+    } catch (error) {
+        res.json({ mensaje: error.message });
+    }
+}
+
 module.exports = {
     createSale,
-    cancelSale,
+    updateSale,
     getSales,
-    getSale
+    getSale,
+    getSaleByIdUser
 }

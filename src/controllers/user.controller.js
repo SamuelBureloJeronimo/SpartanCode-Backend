@@ -14,7 +14,7 @@ let createUser = async (req, res) => {
         userModel.nick = req.body.nick;
         userModel.correo_electronico = req.body.correo_electronico;
         userModel.nombre = req.body.nombre;
-        userModel.rol = "647ab01c1e042b524ee9c3e1";
+        userModel.rol = "6463518e9be4555e1669f03f";
         userModel.fecha_registro = new Date();
         userModel.fecha_nacimiento = req.body.fecha_nacimiento;
         userModel.password = req.body.password;

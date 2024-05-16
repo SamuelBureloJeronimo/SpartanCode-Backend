@@ -4,8 +4,9 @@ const router = express.Router();
 
 //Ruta pra creación de sales
 router.post('/create-sale', saleController.createSale);
-router.put('/cancel-sale/:id', saleController.cancelSale);
+router.put('/update-sale/:id', saleController.updateSale);
 router.get('/get-sales', saleController.getSales);
 router.get('/get-sale/:id', saleController.getSale);
+router.get('/get-saleByUser/:idUser', saleController.getSaleByIdUser);
 
 module.exports = router;

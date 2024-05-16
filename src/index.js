@@ -2,7 +2,7 @@ const app = require('./app');
 const mongoose = require('mongoose');
 
 //Conexión a la base de datos mongodb con mongoose
-mongoose.connect('mongodb+srv://shmekercross:8uv9jW6HbpxvqMqM@spartansdb.il0plho.mongodb.net/slava-shop?retryWrites=true&w=majority')
+mongoose.connect("mongodb://127.0.0.1:27017/slava-shop")
     .then(() => {
         console.log('conectado');
     })
