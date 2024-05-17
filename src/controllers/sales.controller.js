@@ -5,6 +5,7 @@ let createSale = async (req, res) => {
     try {
         let sale = new Sales();
         sale.user = req.body.user;
+        sale.address = req.body.address;
         sale.articulo = req.body.articulo;
         sale.cantidad = req.body.cantidad;
 
@@ -56,14 +57,14 @@ let updateSale = async (req, res) => {
 }
 
 let getSales = async (req, res) => {
-    let sales = await Sales.find().populate('articulo');
+    let sales = await Sales.find().populate('articulo address');
     res.json(sales);
 }
 
 let getSale = async (req, res) => {
     try {
         let { id } = req.params;
-        let sale = await Sales.findById(id).populate('articulo status');
+        let sale = await Sales.findById(id).populate('articulo address');
         if (sale)
             res.status(200).json(sale);
         else
@@ -76,7 +77,7 @@ let getSale = async (req, res) => {
 let getSaleByIdUser = async (req, res) => {
     try {
         let { idUser } = req.params;
-        let sale = await Sales.find({user: idUser}).populate('articulo status');
+        let sale = await Sales.find({user: idUser}).populate('articulo address');
         if (sale)
             res.status(200).json(sale);
         else
