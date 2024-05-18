@@ -43,26 +43,44 @@ let createAddress = async (req, res) => {
     }
 }
 
-let editAddress = (req, res) => {
-
+let getAddressByUser = async (req, res) => {
+    try {
+        const {idUser} = req.params;
+        let user = await Users.findById(idUser).populate("addresses");
+        //Case 0:
+        if (!user) {
+            return res.json({ msg: 'El usuario no existe' });
+        }
+        res.json(user.addresses).status(200);
+    } catch (error) {
+        res.json({ mensaje: error.message });
+    }
 }
 
-let getAllAddress = (req, res) => {
+let changeAddress = async (req, res) => {
+    try {
+        const {idUser} = req.params;
+        let user = await Users.findById(idUser);
+        //Case 0:
+        if (!user) {
+            return res.json({ msg: 'El usuario no existe' });
+        }
+        user.addresses = req.body.address;
 
-}
+        let userUpdate = {
+            addresses: user.addresses
+        }
 
-let getAddress = (req, res) => {
-
-}
-
-let deleteAddress = (req, res) => {
-
+        await Users.findByIdAndUpdate({_id: idUser}, userUpdate);
+        //await address.save(); //Guarda la colecion en la BD
+        res.json({message: '¡Dirección guardada!'}).status(200);
+    } catch (error) {
+        res.json({ mensaje: error.message });
+    }
 }
 
 module.exports = {
     createAddress,
-    editAddress,
-    getAllAddress,
-    getAddress,
-    deleteAddress
+    getAddressByUser,
+    changeAddress
 }

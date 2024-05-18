@@ -8,7 +8,7 @@ let createSale = async (req, res) => {
         sale.address = req.body.address;
         sale.articulo = req.body.articulo;
         sale.cantidad = req.body.cantidad;
-
+        sale.noDeGuia = "5201210604";
         const product = await Product.findById(req.body.articulo);
 
         if (product) {
@@ -16,7 +16,7 @@ let createSale = async (req, res) => {
             if (product.cantidad > 0 && product.cantidad >= sale.cantidad) {
                 sale.total = sale.cantidad * product.precio;
                 product.cantidad -= sale.cantidad;
-                sale.status = false;
+                sale.status = "En preparacion";
 
                 await product.save();
                 await sale.save();
@@ -37,17 +37,12 @@ let updateSale = async (req, res) => {
         let sale = await Sales.findById(req.params.id);
 
         if (sale) {
-            if (sale.status == false) {
-                deleted_sale = await Sales.findByIdAndUpdate(sale, req.body);
-                sale.status = true;
-                await sale.save();
-                res.status(200).json({ mesage: 'Venta actualizada con éxito'});
-            } else{
-                deleted_sale = await Sales.findByIdAndUpdate(sale, req.body);
-                sale.status = false;
-                await sale.save();
-                res.status(200).json({ mesage: 'Venta actualizada con éxito'});
-            }
+        
+            deleted_sale = await Sales.findByIdAndUpdate(sale, req.body);
+            sale.status = req.body.status;
+            await sale.save();
+            res.status(200).json({ mesage: 'Venta actualizada con éxito'});
+        
         } else {
             res.json({ message: 'La compra no se encuentra' });
         }

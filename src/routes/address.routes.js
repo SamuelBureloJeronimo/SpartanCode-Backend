@@ -4,9 +4,7 @@ const router = express.Router();
 
 //Ruta de Creación de direcciones
 router.post('/create-address/:idUser', AddressController.createAddress);
-router.put('/edit-address/:id', AddressController.editAddress);
-router.get('/get-address', AddressController.getAllAddress);
-router.get('/get-address/:id', AddressController.getAddress);
-router.delete('/delete-address/:id', AddressController.deleteAddress);
+router.get('/get-addressByUser/:idUser', AddressController.getAddressByUser);
+router.put('/change-addressUser/:idUser', AddressController.changeAddress);
 
 module.exports = router;

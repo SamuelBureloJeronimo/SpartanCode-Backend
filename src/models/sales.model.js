@@ -8,7 +8,8 @@ const salesSchema = new Schema({
     "fecha": {type: Date, require: true, default: Date.now},
     "cantidad": {type: Number, require: true},
     "total": {type: Number, require: true},
-    "status": {type: Boolean, required: true}
+    "status": {type: String, required: true},    
+    "noDeGuia": {type: String, required: true}
 });
 
 module.exports = mongoose.model('Sales', salesSchema);
