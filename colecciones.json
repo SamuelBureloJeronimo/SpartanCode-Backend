@@ -94,6 +94,11 @@
             }
         },
         "fecha": "Date",
-        "total": "Number"
+        "total": "Number",
+        "status": "String",
+        "address": "ObjectId",
+        "user": "ObjectId",
+        "NoDeGuia": "String",
+        "cantidad": "ObjectId"
     }
 }
